@@ -1,0 +1,18 @@
+uuid: b0ae31f9-633d-4f52-a959-51a2c138f5b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Testing Table'
+type: testing_table
+description: 'This is a testing table just to validate a behavior'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
