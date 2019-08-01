@@ -1,3 +1,50 @@
+# Installation
+
+## settings.php
+
+Create a copy of default.settings.php to settings.php and configure the next rules
+
+### hash
+```php
+$settings['hash_salt'] = 'd2sFoFGloUfXWlnMXRps4Pe8WojBkAk3aqGpdOWEaqsMyWv_zkWIt0zrPl7jhq7EV3URbpoTIw';
+```
+
+### database config
+
+```php
+$databases['default']['default'] = array (
+  'database' => 'database',
+  'username' => 'database',
+  'password' => 'database',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+```
+
+### Set sync directory
+
+```php
+$config_directories['sync'] = '../config/sync';
+```
+
+
+
+## Import database and configuration
+
+```
+drush sql-cli < initial.sql
+drush cim
+```
+
+## Install dependencies
+
+```
+composer install
+```
+
 # Composer template for Drupal projects
 
 [![Build Status](https://travis-ci.org/drupal-composer/drupal-project.svg?branch=8.x)](https://travis-ci.org/drupal-composer/drupal-project)
