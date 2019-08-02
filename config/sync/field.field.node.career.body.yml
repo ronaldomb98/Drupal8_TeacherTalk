@@ -1,0 +1,22 @@
+uuid: fa906431-1a63-4b99-8f97-11b5fa864ba5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.career
+  module:
+    - text
+id: node.career.body
+field_name: body
+entity_type: node
+bundle: career
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

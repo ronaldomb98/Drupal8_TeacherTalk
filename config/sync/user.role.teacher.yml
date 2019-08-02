@@ -1,0 +1,11 @@
+uuid: 3dc5f32b-7189-4c47-bdd0-90d909d1cea8
+langcode: en
+status: true
+dependencies: {  }
+id: teacher
+label: Teacher
+weight: 3
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'create career content'
